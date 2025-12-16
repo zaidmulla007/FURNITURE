@@ -24,23 +24,48 @@ export default function Home() {
   const services = [
     {
       title: "Window Styling",
-      description: "Transform your windows with our premium blinds and curtains collection",
-      icon: "🪟"
+      description: "Tailored roller, vertical, and wooden blinds—customized to fit your space with elegance and privacy.",
+      icon: (
+        <svg className="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="4" y="4" width="16" height="16" rx="1" />
+          <line x1="4" y1="8" x2="20" y2="8" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="16" x2="20" y2="16" />
+          <line x1="12" y1="4" x2="12" y2="20" />
+        </svg>
+      )
     },
     {
       title: "Wall Design",
-      description: "Elevate your walls with stunning wallpaper designs and textures",
-      icon: "🎨"
+      description: "Modern, textured, and luxury wallpapers that redefine your walls and set the mood of your interiors.",
+      icon: (
+        <svg className="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M12 2L4 6v6c0 5 3 9 8 10 5-1 8-5 8-10V6l-8-4z" />
+          <path d="M8 10l2 2 4-4" />
+        </svg>
+      )
     },
     {
       title: "Floor Styling",
-      description: "Premium flooring solutions including carpet, LVT, SPC, and parquet",
-      icon: "🏠"
+      description: "Premium LVT and SPC flooring options for durable, stylish, and water-resistant surfaces that last.",
+      icon: (
+        <svg className="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" />
+          <path d="M2 17l10 5 10-5" />
+          <path d="M2 12l10 5 10-5" />
+        </svg>
+      )
     },
     {
       title: "Furniture Setup",
-      description: "Complete furniture solutions crafted with nature-inspired elegance",
-      icon: "🛋️"
+      description: "From sofa placements to carpet installation, our team ensures your space is styled and furnished perfectly.",
+      icon: (
+        <svg className="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="3" y="8" width="18" height="12" rx="2" />
+          <path d="M3 12h18" />
+          <path d="M6 8V6a2 2 0 012-2h8a2 2 0 012 2v2" />
+        </svg>
+      )
     },
   ];
 
@@ -158,15 +183,28 @@ export default function Home() {
               <p className="text-gray-600 text-lg">Comprehensive interior solutions tailored to your needs</p>
             </div>
           </FadeIn>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <FadeIn key={service.title} delay={index * 0.15}>
               <div
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 text-center"
+                className="bg-white text-[#3b4d33] p-8 rounded-2xl border border-gray-200 hover:bg-[#3b4d33] hover:text-white hover:border-[#3b4d33] transition-all duration-300 flex flex-col h-full group"
               >
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-[#3b4d33] mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <div className="mb-6">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-600 group-hover:text-gray-200 mb-6 flex-grow leading-relaxed">
+                  {service.description}
+                </p>
+                <Link
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold hover:gap-3 transition-all duration-200"
+                >
+                  Learn More
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
               </div>
               </FadeIn>
             ))}
