@@ -144,6 +144,9 @@ export default function GalleryPage() {
           </a>
         </div>
       </section>
+
+      {/* Separator Section */}
+      <section className="py-8 bg-gray-50"></section>
       </div>
     </PageTransition>
   );
