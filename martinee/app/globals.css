@@ -1,12 +1,42 @@
 @import "tailwindcss";
 
 :root {
+  /* Brand Colors - Original Green & Turquoise */
   --background: #ffffff;
   --foreground: #1e293b;
   --primary: #3b4d33;
   --secondary: #23c9bc;
   --primary-dark: #2a3826;
   --secondary-light: #4dd9ce;
+
+  /* Extended Palette for Beautiful UI */
+  --background-light: #f8fafc;
+  --background-lighter: #f1f5f9;
+  --foreground-light: #475569;
+  --foreground-lighter: #64748b;
+
+  /* Neutral Grays for depth */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  /* Borders */
+  --border-light: #e2e8f0;
+  --border: #cbd5e1;
+
+  /* Premium Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 @theme inline {

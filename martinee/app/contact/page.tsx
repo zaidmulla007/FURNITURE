@@ -29,27 +29,31 @@ export default function ContactPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center bg-gradient-to-r from-[#3b4d33] to-[#23c9bc]">
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=400&fit=crop')" }}
-        ></div>
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop&q=80')" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
+        </div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl md:text-2xl text-gray-100">
-            Get in touch with us for a free consultation
-          </p>
+          <FadeIn>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl md:text-2xl text-gray-100 font-light">
+              Get in touch with us for a free consultation
+            </p>
+          </FadeIn>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-16">
+      <section className="py-20 bg-[#f8fafc]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
+            <FadeIn direction="left">
             <div>
               <h2 className="text-3xl font-bold text-[#3b4d33] mb-6">Get In Touch</h2>
               <p className="text-gray-600 text-lg mb-8">
@@ -142,9 +146,11 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+            </FadeIn>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <FadeIn direction="right" delay={0.2}>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-3xl font-bold text-[#3b4d33] mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -246,12 +252,13 @@ export default function ContactPage() {
                 </p>
               </form>
             </div>
+            </FadeIn>
           </div>
         </div>
       </section>
 
       {/* Map or Additional Info Section */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#3b4d33] mb-4">We Serve All Emirates</h2>

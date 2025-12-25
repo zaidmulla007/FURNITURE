@@ -154,7 +154,7 @@ export default function CatalogTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#3b4d33] text-white">
+      <section className="py-16 mb-16 bg-[#3b4d33] text-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Order?</h2>
           <p className="text-xl text-gray-200 mb-8">
