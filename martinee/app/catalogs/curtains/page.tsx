@@ -2,45 +2,45 @@ import CatalogTemplate from "@/app/components/CatalogTemplate";
 
 export const metadata = {
   title: "Curtains - Martini Furniture",
-  description: "Premium curtains and drapes for sophisticated window styling. Starting at AED 120 per panel",
+  description: "Premium curtains and drapes for sophisticated window styling",
 };
 
 export default function CurtainsPage() {
   const products = [
     {
       name: "Blackout Curtains",
-      image: "https://images.unsplash.com/photo-1565183928294-7d22f2d53383?w=600&h=600&fit=crop",
-      price: "AED 180 per panel",
+      image: "/images/Curtain/PNG-01.jpg",
+
       description: "Complete light blocking for bedrooms and media rooms",
     },
     {
       name: "Sheer Voile Curtains",
-      image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=600&h=600&fit=crop",
-      price: "AED 120 per panel",
+      image: "/images/Curtain/PNG-02.jpg",
+
       description: "Light and airy for soft natural light filtering",
     },
     {
       name: "Velvet Luxury Curtains",
-      image: "https://images.unsplash.com/photo-1604066867775-43f48e3d6a66?w=600&h=600&fit=crop",
-      price: "AED 250 per panel",
+      image: "/images/Curtain/PNG-03.jpg",
+
       description: "Opulent velvet fabric for elegant sophistication",
     },
     {
       name: "Thermal Insulated Curtains",
-      image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&h=600&fit=crop",
-      price: "AED 200 per panel",
+      image: "/images/Curtain/PNG-04.jpg",
+
       description: "Energy-efficient with temperature control properties",
     },
     {
       name: "Patterned Designer Curtains",
-      image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&h=600&fit=crop",
-      price: "AED 220 per panel",
+      image: "/images/Curtain/PNG-05.jpg",
+
       description: "Unique patterns and designs to enhance your décor",
     },
     {
       name: "Motorized Smart Curtains",
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=600&fit=crop",
-      price: "AED 350 per panel",
+      image: "/images/Curtain/PNG-06.jpg",
+
       description: "Automated operation with remote and smart home integration",
     },
   ];
@@ -73,8 +73,8 @@ export default function CurtainsPage() {
     <CatalogTemplate
       title="Curtains"
       description="Premium curtains and drapes for sophisticated window styling"
-      priceRange="Starting at AED 120 per panel"
-      heroImage="https://images.unsplash.com/photo-1565183928294-7d22f2d53383?w=1920&h=500&fit=crop"
+
+      heroImage="/images/Curtain/PNG-07.jpg"
       products={products}
       features={features}
       aboutContent={aboutContent}

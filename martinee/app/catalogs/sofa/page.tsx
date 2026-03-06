@@ -2,45 +2,45 @@ import CatalogTemplate from "@/app/components/CatalogTemplate";
 
 export const metadata = {
   title: "Sofa - Martini Furniture",
-  description: "Comfort meets style in our premium sofa collection. Starting at AED 2500",
+  description: "Comfort meets style in our premium sofa collection",
 };
 
 export default function SofaPage() {
   const products = [
     {
       name: "Modern L-Shape Sofa",
-      image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop",
-      price: "AED 4500",
+      image: "/images/Sofa/PNG-01.jpg",
+
       description: "Contemporary L-shaped sofa perfect for spacious living rooms",
     },
     {
       name: "Classic 3-Seater Sofa",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=600&fit=crop",
-      price: "AED 2500",
+      image: "/images/Sofa/PNG-02.jpg",
+
       description: "Timeless design with premium upholstery and comfort",
     },
     {
       name: "Leather Recliner Sofa",
-      image: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&h=600&fit=crop",
-      price: "AED 5500",
+      image: "/images/Sofa/PNG-03.jpg",
+
       description: "Luxurious leather with electric reclining mechanism",
     },
     {
       name: "Fabric Sectional Sofa",
-      image: "https://images.unsplash.com/photo-1550254478-ead40cc54513?w=600&h=600&fit=crop",
-      price: "AED 3800",
+      image: "/images/Sofa/PNG-04.jpg",
+
       description: "Modular sectional design for flexible arrangements",
     },
     {
       name: "Velvet Chesterfield Sofa",
-      image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=600&fit=crop",
-      price: "AED 4200",
+      image: "/images/Sofa/PNG-05.jpg",
+
       description: "Elegant tufted design in luxurious velvet fabric",
     },
     {
       name: "Sleeper Sofa Bed",
-      image: "https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=600&h=600&fit=crop",
-      price: "AED 3200",
+      image: "/images/Sofa/PNG-06.jpg",
+
       description: "Dual-purpose sofa converts to comfortable bed",
     },
   ];
@@ -73,8 +73,8 @@ export default function SofaPage() {
     <CatalogTemplate
       title="Sofa"
       description="Comfort meets style in our premium sofa collection"
-      priceRange="Starting at AED 2500"
-      heroImage="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&h=500&fit=crop"
+
+      heroImage="/images/Sofa/PNG-07.jpg"
       products={products}
       features={features}
       aboutContent={aboutContent}

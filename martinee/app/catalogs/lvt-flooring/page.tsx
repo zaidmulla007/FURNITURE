@@ -2,45 +2,45 @@ import CatalogTemplate from "@/app/components/CatalogTemplate";
 
 export const metadata = {
   title: "LVT Flooring - Martini Furniture",
-  description: "Luxury Vinyl Tile flooring with realistic wood and stone looks. Starting at AED 55 per sq. meter",
+  description: "Luxury Vinyl Tile flooring with realistic wood and stone looks",
 };
 
 export default function LVTFlooringPage() {
   const products = [
     {
       name: "Oak Wood Effect LVT",
-      image: "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=600&h=600&fit=crop",
-      price: "AED 65 per sq.m",
+      image: "/images/LVT/PNG-01.jpg",
+
       description: "Realistic oak wood appearance with superior durability",
     },
     {
       name: "Stone Effect LVT",
-      image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&h=600&fit=crop",
-      price: "AED 70 per sq.m",
+      image: "/images/LVT/PNG-02.jpg",
+
       description: "Natural stone look with waterproof performance",
     },
     {
       name: "Herringbone Pattern LVT",
-      image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=600&fit=crop",
-      price: "AED 85 per sq.m",
+      image: "/images/LVT/PNG-03.jpg",
+
       description: "Classic herringbone design for elegant spaces",
     },
     {
       name: "Wide Plank LVT",
-      image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=600&fit=crop",
-      price: "AED 75 per sq.m",
+      image: "/images/LVT/PNG-04.jpg",
+
       description: "Contemporary wide plank format for modern interiors",
     },
     {
       name: "Commercial Grade LVT",
-      image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=600&fit=crop",
-      price: "AED 55 per sq.m",
+      image: "/images/LVT/PNG-05.jpg",
+
       description: "Heavy-duty flooring for high-traffic commercial areas",
     },
     {
       name: "Premium Designer LVT",
-      image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=600&fit=crop",
-      price: "AED 95 per sq.m",
+      image: "/images/LVT/PNG-06.jpg",
+
       description: "Luxury collection with authentic textures and finishes",
     },
   ];
@@ -73,8 +73,8 @@ export default function LVTFlooringPage() {
     <CatalogTemplate
       title="LVT Flooring"
       description="Luxury Vinyl Tile flooring with realistic wood and stone looks"
-      priceRange="Starting at AED 55 per sq. meter"
-      heroImage="https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=1920&h=500&fit=crop"
+
+      heroImage="/images/LVT/PNG-07.jpg"
       products={products}
       features={features}
       aboutContent={aboutContent}

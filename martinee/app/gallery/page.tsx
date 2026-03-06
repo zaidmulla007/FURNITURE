@@ -11,18 +11,18 @@ export default function GalleryPage() {
   const categories = ["All", "Residential", "Commercial", "Window Treatments", "Flooring", "Furniture", "Wallpaper"];
 
   const projects = [
-    { title: "Modern Living Room", image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop&q=80", category: "Residential" },
-    { title: "Luxury Bedroom Blinds", image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop&q=80", category: "Window Treatments" },
-    { title: "Office Flooring Installation", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&q=80", category: "Commercial" },
-    { title: "Contemporary Sofa Set", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop&q=80", category: "Furniture" },
-    { title: "Designer Wallpaper Installation", image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&h=600&fit=crop&q=80", category: "Wallpaper" },
-    { title: "Wooden Blinds Project", image: "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=800&h=600&fit=crop&q=80", category: "Window Treatments" },
-    { title: "Luxury Carpet Installation", image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=800&h=600&fit=crop&q=80", category: "Flooring" },
-    { title: "Elegant Curtains Setup", image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=600&fit=crop&q=80", category: "Window Treatments" },
-    { title: "Modern Office Space", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop&q=80", category: "Commercial" },
-    { title: "Parquet Flooring", image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&h=600&fit=crop&q=80", category: "Flooring" },
-    { title: "Vertical Blinds Installation", image: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&h=600&fit=crop&q=80", category: "Window Treatments" },
-    { title: "Complete Home Makeover", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop&q=80", category: "Residential" },
+    { title: "Modern Living Room", image: "/images/Sofa/PNG-03.jpg", category: "Residential" },
+    { title: "Luxury Bedroom Blinds", image: "/images/RollerBlinds/PNG-08.jpg", category: "Window Treatments" },
+    { title: "Office Flooring Installation", image: "/images/LVT/PNG-08.jpg", category: "Commercial" },
+    { title: "Contemporary Sofa Set", image: "/images/Sofa/PNG-04.jpg", category: "Furniture" },
+    { title: "Designer Wallpaper Installation", image: "/images/Wallpaper/PNG-08.jpg", category: "Wallpaper" },
+    { title: "Wooden Blinds Project", image: "/images/WoodenBlinds/PNG-08.jpg", category: "Window Treatments" },
+    { title: "Luxury Carpet Installation", image: "/images/Carpet/PNG-08.jpg", category: "Flooring" },
+    { title: "Elegant Curtains Setup", image: "/images/Curtain/PNG-08.jpg", category: "Window Treatments" },
+    { title: "Modern Office Space", image: "/images/SPC/PNG-08.jpg", category: "Commercial" },
+    { title: "Parquet Flooring", image: "/images/FlooringParquet/PNG-08.jpg", category: "Flooring" },
+    { title: "Vertical Blinds Installation", image: "/images/VerticalBlinds/PNG-08.jpg", category: "Window Treatments" },
+    { title: "Complete Home Makeover", image: "/images/Sofa/PNG-09.jpg", category: "Residential" },
   ];
 
   const filteredProjects = activeFilter === "All"
@@ -35,21 +35,21 @@ export default function GalleryPage() {
       location: "Dubai Marina",
       rating: 5,
       text: "Excellent service from start to finish! The team was professional, punctual, and the quality of installation exceeded our expectations. Highly recommended!",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80"
+      image: "/images/Sofa/PNG-05.jpg"
     },
     {
       name: "Sarah Johnson",
       location: "Abu Dhabi",
       rating: 5,
       text: "Beautiful flooring installed perfectly! The team helped us choose the right product and the installation was flawless. Very happy with our new LVT floors.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80"
+      image: "/images/LVT/PNG-05.jpg"
     },
     {
       name: "Mohammed Al Hashimi",
       location: "Sharjah",
       rating: 5,
       text: "Great experience! Ordered custom blinds for our entire villa and couldn't be happier. Quality products, competitive pricing, and excellent customer service.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80"
+      image: "/images/RollerBlinds/PNG-05.jpg"
     }
   ];
 
@@ -60,7 +60,7 @@ export default function GalleryPage() {
         <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=800&fit=crop&q=80')" }}
+            style={{ backgroundImage: "url('/images/Sofa/PNG-02.jpg')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
           </div>
@@ -169,7 +169,7 @@ export default function GalleryPage() {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
                   </div>
                 </FadeIn>

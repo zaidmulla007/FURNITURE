@@ -8,77 +8,77 @@ export default function CatalogsPage() {
   const catalogs = [
     {
       name: "Roller Blinds",
-      image: "https://images.unsplash.com/photo-1620222071550-a5c7f8b600ed?w=800&h=600&fit=crop&q=80",
+      image: "/images/RollerBlinds/PNG-01.jpg",
       description: "Enhance your space with sleek and functional roller blinds",
       href: "/catalogs/roller-blinds",
       category: "Window Treatments"
     },
     {
       name: "Vertical Blinds",
-      image: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&h=600&fit=crop&q=80",
+      image: "/images/VerticalBlinds/PNG-01.jpg",
       description: "Perfect for large windows and sliding doors with vertical operation",
       href: "/catalogs/vertical-blinds",
       category: "Window Treatments"
     },
     {
       name: "Wooden Blinds",
-      image: "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=800&h=600&fit=crop&q=80",
+      image: "/images/WoodenBlinds/PNG-01.jpg",
       description: "Classic elegance with natural wood grain and warmth",
       href: "/catalogs/wooden-blinds",
       category: "Window Treatments"
     },
     {
       name: "Carpet",
-      image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=800&h=600&fit=crop&q=80",
+      image: "/images/Carpet/PNG-01.jpg",
       description: "Luxurious carpets in various textures and colors",
       href: "/catalogs/carpet",
       category: "Flooring"
     },
     {
       name: "Curtains",
-      image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=600&fit=crop&q=80",
+      image: "/images/Curtain/PNG-01.jpg",
       description: "Premium curtains and drapes for sophisticated window styling",
       href: "/catalogs/curtains",
       category: "Window Treatments"
     },
     {
       name: "Wallpaper",
-      image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&h=600&fit=crop&q=80",
+      image: "/images/Wallpaper/PNG-01.jpg",
       description: "Transform your walls with stunning designer wallpapers",
       href: "/catalogs/wallpaper",
       category: "Wall Styling"
     },
     {
       name: "Sofa",
-      image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop&q=80",
+      image: "/images/Sofa/PNG-01.jpg",
       description: "Comfort meets style in our sofa collection",
       href: "/catalogs/sofa",
       category: "Furniture"
     },
     {
       name: "LVT Flooring",
-      image: "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=800&h=600&fit=crop&q=80",
+      image: "/images/LVT/PNG-01.jpg",
       description: "Luxury Vinyl Tile flooring with realistic wood and stone looks",
       href: "/catalogs/lvt-flooring",
       category: "Flooring"
     },
     {
       name: "SPC Flooring",
-      image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&h=600&fit=crop&q=80",
+      image: "/images/SPC/PNG-01.jpg",
       description: "Stone Plastic Composite flooring for durability and style",
       href: "/catalogs/spc-flooring",
       category: "Flooring"
     },
     {
       name: "Remote Control",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80",
+      image: "/images/RemoteControlSystem/PNG-01.jpg",
       description: "Smart automation systems for your window treatments",
       href: "/catalogs/remote-control",
       category: "Automation"
     },
     {
       name: "Parquet Flooring",
-      image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&h=600&fit=crop&q=80",
+      image: "/images/FlooringParquet/PNG-01.jpg",
       description: "Timeless parquet flooring in various patterns and finishes",
       href: "/catalogs/parquet-flooring",
       category: "Flooring"
@@ -92,7 +92,7 @@ export default function CatalogsPage() {
         <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=800&fit=crop&q=80')" }}
+            style={{ backgroundImage: "url('/images/Curtain/PNG-03.jpg')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
           </div>

@@ -7,14 +7,12 @@ import FadeIn from "./FadeIn";
 interface Product {
   name: string;
   image: string;
-  price: string;
   description: string;
 }
 
 interface CatalogTemplateProps {
   title: string;
   description: string;
-  priceRange: string;
   heroImage: string;
   products: Product[];
   aboutContent: string[];
@@ -28,7 +26,6 @@ interface CatalogTemplateProps {
 export default function CatalogTemplate({
   title,
   description,
-  priceRange,
   heroImage,
   products,
   aboutContent,
@@ -49,8 +46,6 @@ export default function CatalogTemplate({
           <p className="text-xl md:text-2xl mb-4 text-gray-100">
             {description}
           </p>
-          <p className="text-2xl font-semibold mb-8">{priceRange}</p>
-          <p className="text-lg text-gray-200 mb-8">Installation included</p>
           <a
             href={`https://wa.me/971505522437?text=${encodeURIComponent(`Hi, I'm interested in ${title}. Can you provide more information?`)}`}
             target="_blank"
@@ -86,9 +81,6 @@ export default function CatalogTemplate({
                   <h3 className="text-xl font-bold text-[#3b4d33] mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-2xl font-semibold text-[#23c9bc] mb-3">
-                    {product.price}
-                  </p>
                   <p className="text-gray-600 mb-4">{product.description}</p>
                   <a
                     href={`https://wa.me/971505522437?text=${encodeURIComponent(`Hi, I'm interested in ${product.name}. Can you provide more information?`)}`}

@@ -8,17 +8,17 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const categories = [
-    { name: "Roller Blinds", image: "https://images.unsplash.com/photo-1620222071550-a5c7f8b600ed?w=800&h=600&fit=crop&q=80", href: "/catalogs/roller-blinds" },
-    { name: "Vertical Blinds", image: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&h=600&fit=crop&q=80", href: "/catalogs/vertical-blinds" },
-    { name: "Wooden Blinds", image: "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=800&h=600&fit=crop&q=80", href: "/catalogs/wooden-blinds" },
-    { name: "Carpet", image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=800&h=600&fit=crop&q=80", href: "/catalogs/carpet" },
-    { name: "Curtains", image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=600&fit=crop&q=80", href: "/catalogs/curtains" },
-    { name: "Wallpaper", image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&h=600&fit=crop&q=80", href: "/catalogs/wallpaper" },
-    { name: "Sofa", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop&q=80", href: "/catalogs/sofa" },
-    { name: "LVT Flooring", image: "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=800&h=600&fit=crop&q=80", href: "/catalogs/lvt-flooring" },
-    { name: "SPC Flooring", image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&h=600&fit=crop&q=80", href: "/catalogs/spc-flooring" },
-    { name: "Remote Control", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80", href: "/catalogs/remote-control" },
-    { name: "Parquet Flooring", image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&h=600&fit=crop&q=80", href: "/catalogs/parquet-flooring" },
+    { name: "Roller Blinds", image: "/images/RollerBlinds/PNG-01.jpg", href: "/catalogs/roller-blinds", tag: "Window Treatments", desc: "Sleek, modern blinds for effortless light control" },
+    { name: "Vertical Blinds", image: "/images/VerticalBlinds/PNG-01.jpg", href: "/catalogs/vertical-blinds", tag: "Window Treatments", desc: "Perfect for large windows and sliding doors" },
+    { name: "Wooden Blinds", image: "/images/WoodenBlinds/PNG-01.jpg", href: "/catalogs/wooden-blinds", tag: "Window Treatments", desc: "Classic elegance with natural wood warmth" },
+    { name: "Carpet", image: "/images/Carpet/PNG-01.jpg", href: "/catalogs/carpet", tag: "Flooring", desc: "Luxurious textures for every space" },
+    { name: "Curtains", image: "/images/Curtain/PNG-01.jpg", href: "/catalogs/curtains", tag: "Window Treatments", desc: "Premium drapes for sophisticated styling" },
+    { name: "Wallpaper", image: "/images/Wallpaper/PNG-01.jpg", href: "/catalogs/wallpaper", tag: "Wall Styling", desc: "Transform walls with stunning designs" },
+    { name: "Sofa", image: "/images/Sofa/PNG-01.jpg", href: "/catalogs/sofa", tag: "Furniture", desc: "Comfort meets style in every piece" },
+    { name: "LVT Flooring", image: "/images/LVT/PNG-01.jpg", href: "/catalogs/lvt-flooring", tag: "Flooring", desc: "Realistic wood & stone looks, waterproof" },
+    { name: "SPC Flooring", image: "/images/SPC/PNG-01.jpg", href: "/catalogs/spc-flooring", tag: "Flooring", desc: "Ultra-durable stone composite flooring" },
+    { name: "Remote Control", image: "/images/RemoteControlSystem/PNG-01.jpg", href: "/catalogs/remote-control", tag: "Automation", desc: "Smart motorized window solutions" },
+    { name: "Parquet Flooring", image: "/images/FlooringParquet/PNG-01.jpg", href: "/catalogs/parquet-flooring", tag: "Flooring", desc: "Timeless patterns in premium hardwood" },
   ];
 
   const services = [
@@ -60,7 +60,7 @@ export default function Home() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=1080&fit=crop&q=80')"
+              backgroundImage: "url('/images/Sofa/PNG-02.jpg')"
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
@@ -134,43 +134,64 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Categories Grid - Enhanced spacing and visuals */}
-        <section className="py-20 bg-[#f8fafc]">
+        {/* Categories Grid - Premium Card Design */}
+        <section className="py-24 bg-gradient-to-b from-[#f8fafc] to-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <FadeIn>
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#1e293b] mb-4">Our Product Catalog</h2>
-                <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+              <div className="text-center mb-20">
+                <span className="inline-block bg-[#23c9bc]/10 text-[#23c9bc] px-5 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-5">
+                  Collections
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-[#1e293b] mb-5">Our Product Catalog</h2>
+                <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
                   Discover our complete range of premium furniture and interior solutions
                 </p>
               </div>
             </FadeIn>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {categories.map((category, index) => (
-                <FadeIn key={category.name} delay={index * 0.1}>
+                <FadeIn key={category.name} delay={index * 0.08}>
                   <Link
                     href={category.href}
-                    className="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-2xl transition-all duration-500"
+                    className="group relative overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
                   >
+                    {/* Image Container */}
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img
                         src={category.image}
                         alt={category.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500"></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-end p-6">
-                      <div className="w-full">
-                        <h3 className="text-white font-bold text-2xl mb-2">{category.name}</h3>
-                        <div className="flex items-center text-[#23c9bc] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <span className="text-sm font-semibold mr-2">View Collection</span>
-                          <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </div>
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                      {/* Tag */}
+                      <div className="absolute top-4 left-4">
+                        <span className="inline-block bg-white/90 backdrop-blur-sm text-[#3b4d33] px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+                          {category.tag}
+                        </span>
+                      </div>
+                      {/* Hover Icon */}
+                      <div className="absolute top-4 right-4 w-10 h-10 bg-[#23c9bc] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-400 shadow-lg">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                       </div>
                     </div>
+                    {/* Content */}
+                    <div className="p-6">
+                      <h3 className="text-[#1e293b] font-bold text-xl mb-2 group-hover:text-[#3b4d33] transition-colors duration-300">
+                        {category.name}
+                      </h3>
+                      <p className="text-gray-500 text-sm leading-relaxed mb-4">{category.desc}</p>
+                      <div className="flex items-center text-[#23c9bc] font-semibold text-sm">
+                        <span className="mr-2 group-hover:mr-3 transition-all duration-300">Explore Collection</span>
+                        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                    {/* Bottom accent line */}
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#3b4d33] to-[#23c9bc] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                   </Link>
                 </FadeIn>
               ))}
@@ -214,7 +235,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1000&fit=crop&q=80"
+                      src="/images/Curtain/PNG-02.jpg"
                       alt="Beautiful modern living room"
                       className="w-full h-full object-cover"
                     />

@@ -49,7 +49,7 @@ export default function AboutPage() {
         <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=800&fit=crop&q=80')" }}
+            style={{ backgroundImage: "url('/images/WoodenBlinds/PNG-08.jpg')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
           </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=1000&fit=crop&q=80"
+                      src="/images/Curtain/PNG-04.jpg"
                       alt="Modern Office Space"
                       className="w-full h-full object-cover"
                     />
@@ -174,7 +174,7 @@ export default function AboutPage() {
               <FadeIn direction="left">
                 <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=1000&fit=crop&q=80"
+                    src="/images/Wallpaper/PNG-04.jpg"
                     alt="Professional Team"
                     className="w-full h-full object-cover"
                   />

@@ -2,17 +2,17 @@ import CatalogTemplate from "@/app/components/CatalogTemplate";
 
 export const metadata = {
   title: "SPC Flooring - Martini Furniture",
-  description: "Stone Plastic Composite flooring for durability and style. Starting at AED 60 per sq. meter",
+  description: "Stone Plastic Composite flooring for durability and style",
 };
 
 export default function SPCFlooringPage() {
   const products = [
-    { name: "Grey Oak SPC", image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=600&fit=crop", price: "AED 65 per sq.m", description: "Contemporary grey tones with oak texture" },
-    { name: "Natural Walnut SPC", image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&h=600&fit=crop", price: "AED 70 per sq.m", description: "Rich walnut appearance with deep grain" },
-    { name: "Light Maple SPC", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=600&fit=crop", price: "AED 60 per sq.m", description: "Bright and airy maple wood look" },
-    { name: "Stone Effect SPC", image: "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=600&h=600&fit=crop", price: "AED 75 per sq.m", description: "Realistic stone and tile appearance" },
-    { name: "Extra Wide Plank SPC", image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=600&fit=crop", price: "AED 80 per sq.m", description: "Modern wide plank format" },
-    { name: "Premium Embossed SPC", image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=600&fit=crop", price: "AED 90 per sq.m", description: "Enhanced texture with deep embossing" },
+    { name: "Grey Oak SPC", image: "/images/SPC/PNG-01.jpg", description: "Contemporary grey tones with oak texture" },
+    { name: "Natural Walnut SPC", image: "/images/SPC/PNG-02.jpg", description: "Rich walnut appearance with deep grain" },
+    { name: "Light Maple SPC", image: "/images/SPC/PNG-03.jpg", description: "Bright and airy maple wood look" },
+    { name: "Stone Effect SPC", image: "/images/SPC/PNG-04.jpg", description: "Realistic stone and tile appearance" },
+    { name: "Extra Wide Plank SPC", image: "/images/SPC/PNG-05.jpg", description: "Modern wide plank format" },
+    { name: "Premium Embossed SPC", image: "/images/SPC/PNG-06.jpg", description: "Enhanced texture with deep embossing" },
   ];
 
   const features = [
@@ -27,5 +27,5 @@ export default function SPCFlooringPage() {
     "With its click-lock installation system, SPC flooring can be installed quickly over most existing floors. It's low maintenance, scratch-resistant, and provides excellent value for money. Our professional installation ensures a perfect, lasting result.",
   ];
 
-  return <CatalogTemplate title="SPC Flooring" description="Stone Plastic Composite flooring for durability and style" priceRange="Starting at AED 60 per sq. meter" heroImage="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1920&h=500&fit=crop" products={products} features={features} aboutContent={aboutContent} />;
+  return <CatalogTemplate title="SPC Flooring" description="Stone Plastic Composite flooring for durability and style" heroImage="/images/SPC/PNG-07.jpg" products={products} features={features} aboutContent={aboutContent} />;
 }

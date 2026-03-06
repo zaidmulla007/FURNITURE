@@ -8,38 +8,32 @@ export default function RollerBlindsPage() {
   const products = [
     {
       name: "Classic Roller Blind",
-      image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
-      price: "AED 75",
+      image: "/images/RollerBlinds/PNG-01.jpg",
       description: "Simple and elegant roller blind perfect for any room",
     },
     {
       name: "Blackout Roller Blind",
-      image: "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&h=600&fit=crop",
-      price: "AED 95",
+      image: "/images/RollerBlinds/PNG-02.jpg",
       description: "Complete light blocking for bedrooms and media rooms",
     },
     {
       name: "Sunscreen Roller Blind",
-      image: "https://images.unsplash.com/photo-1616627781417-a1e2b9c7a7f7?w=600&h=600&fit=crop",
-      price: "AED 85",
+      image: "/images/RollerBlinds/PNG-03.jpg",
       description: "UV protection while maintaining natural light",
     },
     {
       name: "Motorized Roller Blind",
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=600&fit=crop",
-      price: "AED 175",
+      image: "/images/RollerBlinds/PNG-04.jpg",
       description: "Smart automation with remote control operation",
     },
     {
       name: "Patterned Roller Blind",
-      image: "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=600&h=600&fit=crop",
-      price: "AED 90",
+      image: "/images/RollerBlinds/PNG-05.jpg",
       description: "Decorative patterns to enhance your interior design",
     },
     {
       name: "Dual Roller Blind",
-      image: "https://images.unsplash.com/photo-1618220924273-338d82d6b886?w=600&h=600&fit=crop",
-      price: "AED 120",
+      image: "/images/RollerBlinds/PNG-06.jpg",
       description: "Two layers for versatile light control options",
     },
   ];
@@ -52,17 +46,13 @@ export default function RollerBlindsPage() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div
           className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618220179428-22790b461013?w=1920&h=500&fit=crop')" }}
+          style={{ backgroundImage: "url('/images/RollerBlinds/PNG-07.jpg')" }}
         ></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Roller Blinds</h1>
           <p className="text-xl md:text-2xl mb-4 text-gray-100">
             Enhance your space with sleek and functional roller blinds
           </p>
-          <p className="text-2xl font-semibold mb-8">
-            Starting at AED 75 per sq. meter
-          </p>
-          <p className="text-lg text-gray-200 mb-8">Installation included</p>
           <a
             href={`https://wa.me/971505522437?text=${encodeURIComponent("Hi, I'm interested in Roller Blinds. Can you provide more information?")}`}
             target="_blank"
@@ -98,9 +88,6 @@ export default function RollerBlindsPage() {
                   <h3 className="text-xl font-bold text-[#3b4d33] mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-2xl font-semibold text-[#23c9bc] mb-3">
-                    {product.price} <span className="text-sm text-gray-500">per sq. meter</span>
-                  </p>
                   <p className="text-gray-600 mb-4">{product.description}</p>
                   <a
                     href={`https://wa.me/971505522437?text=${encodeURIComponent(`Hi, I'm interested in ${product.name}. Can you provide more information?`)}`}

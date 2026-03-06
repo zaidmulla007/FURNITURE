@@ -34,7 +34,7 @@ export default function ContactPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop&q=80')" }}
+          style={{ backgroundImage: "url('/images/RollerBlinds/PNG-09.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#3b4d33]/90 via-[#3b4d33]/70 to-[#23c9bc]/80"></div>
         </div>
